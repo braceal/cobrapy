@@ -207,8 +207,8 @@ def get_solver_name(mip=False, qp=False):
     if len(solvers) == 0:
         raise SolverNotFound("no solvers installed")
     # Those lists need to be updated as optlang implements more solvers
-    mip_order = ["gurobi", "cplex", "glpk"]
-    lp_order = ["glpk", "cplex", "gurobi"]
+    mip_order = ["gurobi", "cplex", "coinor_cbc", "glpk"]
+    lp_order = ["glpk", "cplex", "gurobi", "coinor_cbc"]
     qp_order = ["gurobi", "cplex", "osqp"]
 
     if mip is False and qp is False:

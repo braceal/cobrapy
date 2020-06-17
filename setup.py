@@ -48,7 +48,7 @@ if __name__ == "__main__":
             "ruamel.yaml>=0.16",
             "numpy>=1.13",
             "pandas>=0.17.0",
-            "optlang>=1.4.2",
+            #"optlang>=1.4.2",
             "depinfo",
             "python-libsbml-experimental==5.18.1",
         ],
